@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "158916b5-a2d4-42e5-9555-ef544131dc76",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 166,
+  "height": 166,
+  "platformSettings": {},
+  "subMetas": {
+    "stilt-house_ol": {
+      "ver": "1.0.4",
+      "uuid": "ea3b54f9-463e-421c-9f90-2fc588ebf99c",
+      "rawTextureUuid": "158916b5-a2d4-42e5-9555-ef544131dc76",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 166,
+      "height": 166,
+      "rawWidth": 166,
+      "rawHeight": 166,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

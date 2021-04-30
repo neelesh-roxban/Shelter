@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "TextEntry",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -997,
+            707
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 1,
+          "value": [
+            375,
+            706
+          ],
+          "motionPath": []
+        }
+      ]
+    }
+  },
+  "events": []
+}

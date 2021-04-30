@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "StandingIdel_lev01",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "43560b01-98b4-4461-97c6-c52f7ec50ef4"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "43b5a2ca-6357-49c1-a58b-3ab2849ce299"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "43560b01-98b4-4461-97c6-c52f7ec50ef4"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

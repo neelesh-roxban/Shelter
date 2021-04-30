@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e199a937-89f6-497c-ac9e-32348a14964d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 373,
+  "platformSettings": {},
+  "subMetas": {
+    "Rehna Wrong Answer00022": {
+      "ver": "1.0.4",
+      "uuid": "f9ef136f-8ae8-4b3c-8df5-1b5f8748475b",
+      "rawTextureUuid": "e199a937-89f6-497c-ac9e-32348a14964d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 122,
+      "height": 369,
+      "rawWidth": 128,
+      "rawHeight": 373,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "018e7a19-9d6b-481b-8092-a30bb3422794",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "CEMENT-HOUSE-ICON": {
+      "ver": "1.0.4",
+      "uuid": "384ae427-77b0-4c99-a928-c5dc4c4eb76f",
+      "rawTextureUuid": "018e7a19-9d6b-481b-8092-a30bb3422794",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 0,
+      "trimY": 21,
+      "width": 120,
+      "height": 81,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

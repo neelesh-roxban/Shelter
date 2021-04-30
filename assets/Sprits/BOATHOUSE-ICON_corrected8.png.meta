@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "110ad44a-930e-4c65-9e30-e49b05021b19",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "BOATHOUSE-ICON_corrected8": {
+      "ver": "1.0.4",
+      "uuid": "86e39a01-c2d9-4c41-9fd7-0b8908cd31b6",
+      "rawTextureUuid": "110ad44a-930e-4c65-9e30-e49b05021b19",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 36,
+      "width": 117,
+      "height": 49,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

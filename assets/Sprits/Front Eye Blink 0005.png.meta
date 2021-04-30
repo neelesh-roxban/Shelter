@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "29f95284-3a5e-44ad-b795-f42bba12b928",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 373,
+  "platformSettings": {},
+  "subMetas": {
+    "Front Eye Blink 0005": {
+      "ver": "1.0.4",
+      "uuid": "c159abbd-1e9a-4fe3-97dd-bb05839a7749",
+      "rawTextureUuid": "29f95284-3a5e-44ad-b795-f42bba12b928",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 123,
+      "height": 368,
+      "rawWidth": 128,
+      "rawHeight": 373,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false,
+    "readonly": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "AudioManager",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": {
+      "__id__": 4
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "8afb8y0Ow5D2YtayvQWRsiN",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "audioClips": [
+      {
+        "__uuid__": "eccd903d-7802-4fb2-a50e-9bc3394d5988"
+      },
+      {
+        "__uuid__": "61dcbd19-61a3-482f-b0fa-26f0f1476dfa"
+      },
+      {
+        "__uuid__": "6f6921d8-1f73-4d26-b60f-2b24a96a2b55"
+      },
+      {
+        "__uuid__": "0ba5ba35-3dd1-4761-8486-8da085729281"
+      },
+      {
+        "__uuid__": "400833da-80ab-46ce-bf00-66bbb859acd7"
+      },
+      {
+        "__uuid__": "1df0289a-aa5c-406e-8db2-8e93e04294ff"
+      },
+      {
+        "__uuid__": "dcba8b09-f9e5-449f-99cb-d6d66e38d4e2"
+      },
+      {
+        "__uuid__": "de0a66dd-174a-48ff-9e56-0b0ba8855e2f"
+      },
+      {
+        "__uuid__": "1209968a-7e79-4544-9acb-8d2c9542dd38"
+      },
+      {
+        "__uuid__": "bb20633c-ea0f-42e5-8e9f-792457514386"
+      },
+      {
+        "__uuid__": "94f80922-5c35-4790-b931-04783fa90d52"
+      },
+      {
+        "__uuid__": "c3750f30-1c1c-4ede-9a47-865092562eaa"
+      },
+      {
+        "__uuid__": "32592624-91d9-4cac-9e6c-792608605aa2"
+      },
+      {
+        "__uuid__": "d43d6920-2788-4f8c-94ef-b88ac23f39c3"
+      },
+      {
+        "__uuid__": "e5c160f1-a79b-499d-ba7b-e2dc0491a919"
+      },
+      {
+        "__uuid__": "50daef61-58e5-434e-b4e1-e3503356c376"
+      },
+      {
+        "__uuid__": "3a96bcfa-4e6e-4d69-9797-258639ff7068"
+      },
+      {
+        "__uuid__": "2e1f56a8-6b17-4603-9052-3185d0cdd600"
+      },
+      {
+        "__uuid__": "48a86009-d892-434e-bd89-f2064d8a95b7"
+      },
+      {
+        "__uuid__": "4555e101-11d8-43a2-8525-28243c5bb74f"
+      },
+      {
+        "__uuid__": "6b622500-ae26-4bda-9086-dbce301e6f3a"
+      },
+      {
+        "__uuid__": "f32180e1-c63e-4f8e-b686-4baf7e7cda94"
+      },
+      {
+        "__uuid__": "aec7fa73-f29e-4fbe-9c97-bec7319b6b94"
+      },
+      {
+        "__uuid__": "31cabcba-f456-487c-8bbc-7417309782e6"
+      },
+      {
+        "__uuid__": "4806c1b0-2cd3-4375-a666-574940f8cfad"
+      },
+      {
+        "__uuid__": "d3dac6e5-d493-47b8-b942-bd248551c9db"
+      },
+      {
+        "__uuid__": "12e88182-e113-42e2-932d-24eed40a2d1f"
+      },
+      {
+        "__uuid__": "15066341-5300-4419-85bf-f2145440c84e"
+      },
+      {
+        "__uuid__": "8e6fd295-e20c-4ff3-b36f-85c6f9027722"
+      },
+      {
+        "__uuid__": "b832eaea-c970-4a13-8ded-fa1bf76d78fd"
+      },
+      {
+        "__uuid__": "681cdea3-10fc-4a7e-b0fc-906aca0c5a50"
+      },
+      {
+        "__uuid__": "ad41b17a-1abd-48cf-a368-efe8a753e75e"
+      },
+      {
+        "__uuid__": "04e73c9e-4a2b-4537-8aaa-9706c587480f"
+      },
+      {
+        "__uuid__": "04e73c9e-4a2b-4537-8aaa-9706c587480f"
+      },
+      {
+        "__uuid__": "1ccbb137-fc12-42b1-bb73-98f185f83fcc"
+      }
+    ],
+    "audioID": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.AudioSource",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_clip": null,
+    "_volume": 1,
+    "_mute": false,
+    "_loop": false,
+    "playOnLoad": false,
+    "preload": false,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__uuid__": "27107f79-1ee6-4fe0-878a-2eabf73b2428"
+    },
+    "fileId": "cc9xIHEPdHNaF+B7K/eTwI",
+    "sync": false
+  }
+]

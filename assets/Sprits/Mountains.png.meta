@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "109058a2-fe16-43b8-87c9-3baa59ff1a1a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1600,
+  "height": 329,
+  "platformSettings": {},
+  "subMetas": {
+    "Mountains": {
+      "ver": "1.0.4",
+      "uuid": "4c7ebc11-0c8e-497a-bd28-6439445bf060",
+      "rawTextureUuid": "109058a2-fe16-43b8-87c9-3baa59ff1a1a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1600,
+      "height": 329,
+      "rawWidth": 1600,
+      "rawHeight": 329,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

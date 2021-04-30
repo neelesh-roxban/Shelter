@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "49a2075b-6492-473e-8aa7-3430a84d358d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 360,
+  "height": 216,
+  "platformSettings": {},
+  "subMetas": {
+    "Igloo-HOUSE_5": {
+      "ver": "1.0.4",
+      "uuid": "0c1ccf87-d709-4575-b3cc-5579b55b0dfc",
+      "rawTextureUuid": "49a2075b-6492-473e-8aa7-3430a84d358d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -24.5,
+      "trimX": 1,
+      "trimY": 52,
+      "width": 356,
+      "height": 161,
+      "rawWidth": 360,
+      "rawHeight": 216,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

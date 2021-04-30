@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "fb8373d0-c886-4f78-ad44-2abf0e8c78df",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "WOOD HOUSE ICON": {
+      "ver": "1.0.4",
+      "uuid": "5a9e395a-e357-45c1-a909-bf0c086b5502",
+      "rawTextureUuid": "fb8373d0-c886-4f78-ad44-2abf0e8c78df",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 9,
+      "width": 120,
+      "height": 102,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

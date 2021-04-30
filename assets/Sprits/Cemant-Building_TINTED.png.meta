@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "2156f0b5-b1b4-4f7d-86d5-8be3484054ad",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 631,
+  "height": 337,
+  "platformSettings": {},
+  "subMetas": {
+    "Cemant-Building_TINTED": {
+      "ver": "1.0.4",
+      "uuid": "e2df4c72-f4f8-4522-b6bb-71bf149f7ec7",
+      "rawTextureUuid": "2156f0b5-b1b4-4f7d-86d5-8be3484054ad",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 631,
+      "height": 337,
+      "rawWidth": 631,
+      "rawHeight": 337,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

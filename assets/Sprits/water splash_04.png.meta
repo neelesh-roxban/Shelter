@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "99950084-2dde-4630-9798-f1f8430b3a97",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1600,
+  "height": 800,
+  "platformSettings": {},
+  "subMetas": {
+    "water splash_04": {
+      "ver": "1.0.4",
+      "uuid": "923aa174-b889-40a0-b0bb-0d0e0990c130",
+      "rawTextureUuid": "99950084-2dde-4630-9798-f1f8430b3a97",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -45,
+      "offsetY": -181,
+      "trimX": 37,
+      "trimY": 362,
+      "width": 1436,
+      "height": 438,
+      "rawWidth": 1600,
+      "rawHeight": 800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
