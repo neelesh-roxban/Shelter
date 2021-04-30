@@ -26,7 +26,7 @@ textNode:cc.Node
 
     start ()
     {      
-       
+        
         this.Play();    
       
     }
