@@ -13,14 +13,15 @@ export default class NewClass extends cc.Component {
     
     
  
-     public playAudio(name:string)
+     public playAudio(name:string):number
      {  
-        console.log("play");
+       
          for(var i=0;i<this.audioClips.length;i++)
          {
              if(this.audioClips[i].name==name)
              {
-              this.audioID=cc.audioEngine.play(this.audioClips[i], false, 1);             
+             var index= this.audioID=cc.audioEngine.play(this.audioClips[i], false, 1);     
+           return index;     
                                
              }
             

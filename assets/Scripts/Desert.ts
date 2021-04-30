@@ -56,20 +56,20 @@ dragAndDropHut:DragAndDrop
     {
      
       
-       var i=this.i;
-       console.log(i);
+      
+      
           this.spawnText("Rehna is on a place which is really hot");
-          this.audiomanager.playAudio("Shelter_03");  
+         var i= this.audiomanager.playAudio("Shelter_03");  
         
-          cc.audioEngine.setFinishCallback(2+i,()=>{
+          cc.audioEngine.setFinishCallback(i,()=>{
            
   
-          this.audiomanager.playAudio("Shelter_04");
+         i= this.audiomanager.playAudio("Shelter_04");
           var animation=this.textNode.getComponent(cc.Animation);
           animation.play("TextExit");
           this.spawnText("Drag the right kind of house for Rehna to stay comfortably");
-               cc.audioEngine.setFinishCallback(3+i,()=>{
-                    console.log("2nd audio");
+               cc.audioEngine.setFinishCallback(i,()=>{
+                 
                     var animation=this.textNode.getComponent(cc.Animation);
                      animation.play("TextExit");
                      this.startQuiz();
@@ -92,7 +92,7 @@ dragAndDropHut:DragAndDrop
     this.Options.active=false;
     this.Hut.active=true;
     this.Hut_cut.active=true;
-    console.log("hut");
+   
     var animation=this.character.getComponent(cc.Animation);
     animation.play("Right_Desert");  
     var ani=this.woddenHouse.getComponent(cc.Animation);
@@ -131,7 +131,7 @@ dragAndDropHut:DragAndDrop
 
         this.woddenHouse.active=true;
         var animation=this.woddenHouse.getComponent(cc.Animation);
-        animation.play("WoddenHouse_Desert");
+       // animation.play("WoddenHouse_Desert");
     }
 
   } 
@@ -157,7 +157,7 @@ dragAndDropHut:DragAndDrop
     
     spawnText(text:string)
        {
-           console.log("as");
+          
           var scene = cc.director.getScene();
           this.textNode = cc.instantiate(this.text);
           this.textNode.parent = scene;

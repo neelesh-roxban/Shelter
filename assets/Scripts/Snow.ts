@@ -58,20 +58,20 @@ dragAndDropBoatHouse:DragAndDrop
     {
      
       
-         var i=this.i;
-         console.log("i==========="+i);
-          this.spawnText("Brr.Rehna is in a bery cold region near the Arctic.She sure is adventurous");
-          this.audiomanager.playAudio("Shelter_08");  
         
-          cc.audioEngine.setFinishCallback(5+i,()=>{
+      
+          this.spawnText("Brr.Rehna is in a bery cold region near the Arctic.She sure is adventurous");
+         var i= this.audiomanager.playAudio("Shelter_08");  
+        
+          cc.audioEngine.setFinishCallback(i,()=>{
            
   
-          this.audiomanager.playAudio("Shelter_09");
+        i=  this.audiomanager.playAudio("Shelter_09");
           var animation=this.textNode.getComponent(cc.Animation);
           animation.play("TextExit");
           this.spawnText("Help her find a nice house to survive the extreme cold");
-               cc.audioEngine.setFinishCallback(6+i,()=>{
-                    console.log("2nd audio");
+               cc.audioEngine.setFinishCallback(i,()=>{
+                    
                     var animation=this.textNode.getComponent(cc.Animation);
                      animation.play("TextExit");
                      this.startQuiz();
@@ -98,7 +98,7 @@ dragAndDropBoatHouse:DragAndDrop
     
     var animation=this.character.getComponent(cc.Animation);
     animation.play("WriteAnswer_Snow");  
-    console.log("animate");
+
    
     
 
@@ -121,7 +121,7 @@ dragAndDropBoatHouse:DragAndDrop
         
         this.audiomanager.playAudio("Shelter_011");
         this.i++;
-        console.log("ASASASAS"+this.i);
+       
 
         this.treeHouse.active=true;
       
@@ -131,7 +131,7 @@ dragAndDropBoatHouse:DragAndDrop
     {
         this.audiomanager.playAudio("Shelter_012");
         this.i++;
-        console.log("ASASASAS"+this.i);
+      
 
         this.BoatHouse.active=true;
        
@@ -161,7 +161,7 @@ dragAndDropBoatHouse:DragAndDrop
     
     spawnText(text:string)
        {
-           console.log("as");
+       
           var scene = cc.director.getScene();
           this.textNode = cc.instantiate(this.text);
           this.textNode.parent = scene;

@@ -1,7 +1,8 @@
 import AudioManager from "./AudioManager"
 
-const {ccclass, property} = cc._decorator;
 
+const {ccclass, property} = cc._decorator;
+declare var require: any
 @ccclass
 export default class NewClass extends cc.Component {
 
@@ -26,15 +27,12 @@ textNode:cc.Node
 
     start ()
     {      
-        
+      
         this.Play();    
       
     }
 
-    update()
-    {
-      console.log("controol");
-    }
+   
 
      Play()
     {           
@@ -47,15 +45,15 @@ textNode:cc.Node
     rollIntroText()
       {
         this.spawnText("Meet Rehna,an adventurous 12 Year Old,Rehna is on a journey around the workd.");
-        this.audiomanager.playAudio("Shelter_01");         
-        cc.audioEngine.setFinishCallback(0,()=>{
+        var i=this.audiomanager.playAudio("Shelter_01");         
+        cc.audioEngine.setFinishCallback(i,()=>{
 
-        this.audiomanager.playAudio("Shelter_02");
+        i=this.audiomanager.playAudio("Shelter_02");
         var animation=this.textNode.getComponent(cc.Animation);
         animation.play("TextExit");
         this.spawnText("She needs a place to stay while she travels.Help her find the appropriate shelter.");
-             cc.audioEngine.setFinishCallback(1,()=>{
-                  console.log("2nd audio");
+             cc.audioEngine.setFinishCallback(i,()=>{
+               
                   var animation=this.textNode.getComponent(cc.Animation);
                    animation.play("TextExit");
                    cc.director.loadScene("Desert");
@@ -68,7 +66,7 @@ textNode:cc.Node
   
     spawnText(text:string)
     {
-      console.log("as");
+     
       var scene = cc.director.getScene();
       this.textNode = cc.instantiate(this.text);
       this.textNode.parent = scene;
