@@ -42,6 +42,7 @@ textNode:cc.Node
               
        
     }
+    
     rollIntroText()
       {
         this.spawnText("Meet Rehna,an adventurous 12 Year Old,Rehna is on a journey around the workd.");

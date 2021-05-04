@@ -46,12 +46,15 @@ dragAndDropBoatHouse:DragAndDrop
 
 
     start () 
-    {    
+    {  
        cc.audioEngine.stopAll();
        cc.audioEngine.uncacheAll();
        this.startLevel();     
 
     }
+ 
+
+ 
 
 
     startLevel()
