@@ -51,15 +51,15 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        85.445,
-        869.529,
+        -574.721,
+        333.857,
         0,
         0,
         0,
         0,
         1,
-        1,
-        1,
+        0.5,
+        0.5,
         1
       ]
     },
@@ -78,7 +78,7 @@
   },
   {
     "__type__": "cc.Sprite",
-    "_name": "",
+    "_name": "Close<Sprite>",
     "_objFlags": 0,
     "node": {
       "__id__": 1
@@ -184,7 +184,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "28ecbcb2-aa63-4671-af93-4309b34b0884"
     },
     "fileId": "fcw0ooqLxBwoX6L520mM0L",
     "sync": false
