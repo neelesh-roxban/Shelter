@@ -29,10 +29,10 @@ export default class NewClass extends cc.Component {
 
 mouseEvents()
 {
-    this.node.on(cc.Node.EventType.MOUSE_DOWN, this.MouseDown,this);
-    this.node.on(cc.Node.EventType.MOUSE_MOVE,this.MouseMove,this);
-    this.node.on(cc.Node.EventType.MOUSE_UP,this.MouseUp,this);
-    this.node.on(cc.Node.EventType.MOUSE_LEAVE,this.MouseLeave,this);
+    this.node.on(cc.Node.EventType.TOUCH_START, this.MouseDown,this);
+    this.node.on(cc.Node.EventType.TOUCH_MOVE,this.MouseMove,this);
+    this.node.on(cc.Node.EventType.TOUCH_END,this.MouseUp,this);
+    this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.MouseLeave,this);
 }
     
  MouseDown(event)
@@ -57,14 +57,16 @@ MouseMove(event)
 MouseUp()
   {                         
          
-         this.mouseDown=false;        
+         this.mouseDown=false;   
+         this.node.position=this.initialPosition;     
          
          
   }
 
 MouseLeave()
   {
-    this.mouseDown=false;     
+    this.mouseDown=false;
+    
 
   }
 
