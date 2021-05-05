@@ -610,6 +610,7 @@
     "slot": {
       "__id__": 12
     },
+    "dragging": false,
     "_id": "e0Mw2vp5tFLpLD1aw+mCZ2"
   },
   {
@@ -3319,6 +3320,7 @@
     "slot": {
       "__id__": 12
     },
+    "dragging": false,
     "_id": "dbyQesCoJPJrK/ZygL7ODn"
   },
   {
@@ -3555,6 +3557,7 @@
     "slot": {
       "__id__": 12
     },
+    "dragging": false,
     "_id": "0465DKaopBd7/pa/R0EqUE"
   },
   {

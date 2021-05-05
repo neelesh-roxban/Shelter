@@ -111,7 +111,8 @@ touchStart(event)
 
   public reset()
   { 
-    
+    this.dragging=false;                    
+    this.slot.touchCount=0;
     this.slot.onSlot=false;
     console.log("res");
     this.node.active=true;
