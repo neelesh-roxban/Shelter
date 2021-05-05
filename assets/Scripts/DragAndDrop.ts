@@ -33,13 +33,10 @@ export default class NewClass extends cc.Component {
     }
 
 
-update()
-{
-  console.log(this.slot.onSlot);
-}
+
 
 mouseEvents()
-{    cc.macro.ENABLE_MULTI_TOUCH = false;
+{ 
     this.node.on(cc.Node.EventType.TOUCH_START, this.touchStart,this);
     this.node.on(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this);
     this.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this);
@@ -53,8 +50,11 @@ touchStart(event)
   }
 
   touchMove(event)
-  {
-    if(this.mouseDown==true)
+  { 
+    let id=event.getID();
+    console.log(id);
+
+    if(this.mouseDown==true&&event.getID()==0)
          {         
             let delta =event.getDelta();
            
