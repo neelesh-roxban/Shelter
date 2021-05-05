@@ -1,3 +1,4 @@
+import Slot from "./Slot";
 
 
 
@@ -18,29 +19,37 @@ export default class NewClass extends cc.Component {
     
     @property
     initialPosition:cc.Vec3
+
+    @property(Slot)
+    slot:Slot
   
     
     onLoad()
-    {  this.mouseEvents();
+    
+    { 
+       this.mouseEvents();
       cc.director.getCollisionManager().enabled=true;
       this.initialPosition=this.node.position;
     }
 
 
+
+
 mouseEvents()
-{
-    this.node.on(cc.Node.EventType.TOUCH_START, this.MouseDown,this);
-    this.node.on(cc.Node.EventType.TOUCH_MOVE,this.MouseMove,this);
-    this.node.on(cc.Node.EventType.TOUCH_END,this.MouseUp,this);
-    this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.MouseLeave,this);
+{    cc.macro.ENABLE_MULTI_TOUCH = false;
+    this.node.on(cc.Node.EventType.TOUCH_START, this.touchStart,this);
+    this.node.on(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this);
+    this.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this);
+    this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchCancel,this);
 }
     
- MouseDown(event)
-  {
-    this.mouseDown=true;          
+touchStart(event)
+  { 
+    this.mouseDown=true;   
+    this.mouseUp=false;       
   }
 
-MouseMove(event)
+  touchMove(event)
   {
     if(this.mouseDown==true)
          {         
@@ -54,16 +63,21 @@ MouseMove(event)
          }  
   }
 
-MouseUp()
+  touchEnd()
   {                         
          
-         this.mouseDown=false;   
-         this.node.position=this.initialPosition;     
+         this.mouseDown=false; 
+         this.mouseUp=true;
+         if(this.slot.onSlot==false)
+          {
+           this.node.position=this.initialPosition;
+          }  
+              
          
          
   }
 
-MouseLeave()
+  touchCancel()
   {
     this.mouseDown=false;
     
@@ -71,7 +85,8 @@ MouseLeave()
   }
 
   public reset()
-  {console.log("res");
+  { 
+    console.log("res");
     this.node.active=true;
     this.node.position=this.initialPosition;
    

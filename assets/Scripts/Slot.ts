@@ -1,5 +1,7 @@
 import Desert from "./Desert";
+import DragAndDrop from "./DragAndDrop";
 import Snow from "./Snow";
+
 
 
 const {ccclass, property} = cc._decorator;
@@ -17,55 +19,84 @@ export default class NewClass extends cc.Component {
 
     @property(Snow)
     snow:Snow=null;
+
+    @property(cc.Vec3)
+    position:cc.Vec3;
+    
+    @property
+   public onSlot:boolean=false;
     
 
    
 
     
-
-    onCollisionEnter(other:cc.Collider,self:cc.Collider)
+   
+    start()
+    {
+        this.position=this.node.position;
+    }
+    onCollisionStay(other:cc.Collider,self:cc.Collider)
      {        
+      this.onSlot=true;   
+      var dragAndDrop=other.node.getComponent(DragAndDrop);
       if(this.desert!=null)
       {
+        
+        console.log(dragAndDrop.mouseUp);
 
        if(other.node.name==this.ID)
        { 
-        
-           this.desert.WriteAnswer();
+           
+            if(dragAndDrop.mouseUp==true)
+            {
+            console.log("up");
+            this.desert.WriteAnswer();
             console.log("correct");
-           other.node.active=false;
-           return;          
+            other.node.active=false;
+            return;
+            }  
+        } 
+            
+            
+            
          
          
-       }
+       
 
-       else 
-           { 
-            console.log("notcorrect");
-             other.node.active=false;
-             this.desert.WrongAnswer(other.node.name);             
+          else 
+          if(dragAndDrop.mouseUp==true)
+            { 
+              console.log("notcorrect");
+              other.node.active=false;
+              this.desert.WrongAnswer(other.node.name);             
 
            }
+        
        
      }
      if(this.snow!=null)
      {
       if(other.node.name==this.ID)
        { 
-        
+        if(dragAndDrop.mouseUp==true)
+            {
            this.snow.WriteAnswer();
             console.log("correct");
            other.node.active=false;
-           return;          
+           return;   
+            }       
          
          
        }
 
        else 
            { 
-            console.log("notcorrect");
+            if(dragAndDrop.mouseUp==true)
+            {
+             console.log("notcorrect");
              other.node.active=false;
-             this.snow.WrongAnswer(other.node.name);             
+             this.snow.WrongAnswer(other.node.name);       
+            }      
 
            } 
 

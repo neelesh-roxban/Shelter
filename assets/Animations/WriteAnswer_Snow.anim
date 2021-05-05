@@ -3,7 +3,7 @@
   "_name": "WriteAnswer_Snow",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.85,
+  "_duration": 1,
   "sample": 60,
   "speed": 0.3,
   "wrapMode": 0,
@@ -91,20 +91,44 @@
           "motionPath": []
         },
         {
-          "frame": 0.4166666666666667,
+          "frame": 0.3333333333333333,
           "value": [
-            228,
-            -93
+            309,
+            -134
+          ]
+        },
+        {
+          "frame": 0.6333333333333333,
+          "value": [
+            167,
+            -42
           ],
           "motionPath": []
         },
         {
-          "frame": 0.8333333333333334,
+          "frame": 1,
           "value": [
-            52,
-            -31
-          ],
-          "motionPath": []
+            -25.5,
+            -36.3
+          ]
+        }
+      ],
+      "scale": [
+        {
+          "frame": 0.4166666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "frame": 0.6333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.4,
+            "y": 0.4
+          }
         }
       ]
     }
