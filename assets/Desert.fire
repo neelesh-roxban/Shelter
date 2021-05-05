@@ -605,6 +605,7 @@
     "_enabled": true,
     "mouseUp": false,
     "mouseDown": false,
+    "touchcount": 0,
     "Id": "",
     "slot": {
       "__id__": 12
@@ -626,6 +627,8 @@
     "snow": null,
     "position": null,
     "onSlot": false,
+    "touchCount": 0,
+    "dragging": false,
     "_id": "c1HMPlLNNFD4oAt50x4EDv"
   },
   {
@@ -3311,6 +3314,7 @@
     "_enabled": true,
     "mouseUp": false,
     "mouseDown": false,
+    "touchcount": 0,
     "Id": "",
     "slot": {
       "__id__": 12
@@ -3546,6 +3550,7 @@
     "_enabled": true,
     "mouseUp": false,
     "mouseDown": false,
+    "touchcount": 0,
     "Id": "",
     "slot": {
       "__id__": 12

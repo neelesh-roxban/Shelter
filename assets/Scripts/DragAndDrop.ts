@@ -15,6 +15,8 @@ export default class NewClass extends cc.Component {
     @property
     mouseDown:boolean=false;
     @property
+    touchcount:number=0;
+    @property
     Id:string="";
     
     @property
@@ -22,6 +24,9 @@ export default class NewClass extends cc.Component {
 
     @property(Slot)
     slot:Slot
+
+    @property
+    dragging:boolean=false;
   
     
     onLoad()
@@ -44,30 +49,44 @@ mouseEvents()
 }
     
 touchStart(event)
-  { 
+  { if(this.slot.touchCount==0)
+    {
+      this.slot.touchCount=1;
+    }
+    else
+    {
+      this.slot.touchCount++;
+    }
+    
+    
     this.mouseDown=true;   
-    this.mouseUp=false;       
+    this.mouseUp=false;      
+    console.log(this.slot.touchCount);
+    //console.log(event.touch);
   }
 
   touchMove(event)
   { 
-    let id=event.getID();
-    console.log(id);
-
-    if(this.mouseDown==true&&event.getID()==0)
-         {         
-            let delta =event.getDelta();
-           
+    
+    if(this.mouseDown==true&&(this.slot.touchCount==1||this.dragging))
+         {  
+            this.dragging=true;     
+            let delta =event.getDelta();          
              
             this.node.x=this.node.x+delta.x;
             this.node.y= this.node.y+delta.y;
            
                 
          }  
+         
+         
   }
 
   touchEnd()
-  {                         
+  {      
+         this.dragging=false;                    
+         this.slot.touchCount--;
+         console.log(this.slot.touchCount);
          
          this.mouseDown=false; 
          this.mouseUp=true;
@@ -84,6 +103,7 @@ touchStart(event)
 
   touchCancel()
   {
+    this.slot.touchCount--;
     this.mouseDown=false;
     
 
@@ -91,7 +111,7 @@ touchStart(event)
 
   public reset()
   { 
-   
+    
     this.slot.onSlot=false;
     console.log("res");
     this.node.active=true;

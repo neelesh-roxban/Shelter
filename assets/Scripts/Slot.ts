@@ -25,6 +25,10 @@ export default class NewClass extends cc.Component {
     
     @property
    public onSlot:boolean=false;
+   @property
+   touchCount:number=0;
+   @property
+   public dragging:boolean=false;
     
 
    
