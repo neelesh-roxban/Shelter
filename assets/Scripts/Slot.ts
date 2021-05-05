@@ -32,7 +32,7 @@ export default class NewClass extends cc.Component {
     
    
     start()
-    {
+    {   this.onSlot=false;
         this.position=this.node.position;
     }
     onCollisionStay(other:cc.Collider,self:cc.Collider)
@@ -109,6 +109,7 @@ export default class NewClass extends cc.Component {
 
      onCollisionExit(other:cc.Collider,self:cc.Collider)
      {
+      this.onSlot=false;
         
               
      }

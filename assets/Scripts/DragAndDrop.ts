@@ -33,7 +33,10 @@ export default class NewClass extends cc.Component {
     }
 
 
-
+update()
+{
+  console.log(this.slot.onSlot);
+}
 
 mouseEvents()
 {    cc.macro.ENABLE_MULTI_TOUCH = false;
@@ -70,7 +73,9 @@ touchStart(event)
          this.mouseUp=true;
          if(this.slot.onSlot==false)
           {
+           console.log("reset");
            this.node.position=this.initialPosition;
+           
           }  
               
          
@@ -86,6 +91,8 @@ touchStart(event)
 
   public reset()
   { 
+   
+    this.slot.onSlot=false;
     console.log("res");
     this.node.active=true;
     this.node.position=this.initialPosition;
